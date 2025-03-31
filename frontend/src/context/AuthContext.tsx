@@ -71,17 +71,4 @@ export const useAuth = () => {
   }
   return context;
 };
-// This code defines an authentication context for a React application using Firebase Authentication.
-// It provides a way to manage user authentication state, including signing in with Google and logging out.
-// The `AuthProvider` component wraps the application and provides the authentication context to its children.
-// The `useAuth` hook allows components to access the authentication context easily.
-// The code also includes error handling for sign-in and logout operations. 
-// The authentication state is managed using the `onAuthStateChanged` listener from Firebase, which updates the user state whenever the authentication state changes.
-// The user data is stored in Firestore when a new user signs in for the first time, ensuring that user information is available for future use.
-// The code is structured to be reusable and maintainable, making it easy to integrate into a larger application. 
-// The `AuthProvider` component can be used at the root level of the application to provide authentication context to all components. 
-// The `useAuth` hook can be used in any component to access the authentication context, allowing for easy integration of authentication features throughout the application.
-// The code is designed to be flexible and can be extended to include additional authentication methods or features as needed.
-// The use of TypeScript ensures type safety and helps catch potential errors during development, making the code more robust and maintainable.
-// Overall, this code provides a solid foundation for managing user authentication in a React application using Firebase Authentication and Firestore.
-// It can be easily integrated into a larger application and extended to include additional features as needed.
+export default AuthProvider;
